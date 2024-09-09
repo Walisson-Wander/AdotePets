@@ -1,0 +1,220 @@
+body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    padding: 0; 
+    background-color:aliceblue;
+    font-family: "kreon",serif;
+}
+/* MENU SUPERIOR */
+.menu nav{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding:5px ;
+}
+.menu nav img{
+    display: block;
+    width: 10vw;
+    height: auto;
+    object-fit: contain;
+}
+.menu nav ul {  
+    flex: 1;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.menu nav ul a{
+    text-decoration: none;
+    color: purple;
+}
+.menu nav ul a:hover{
+    color: orange;
+}
+
+/* CARROSSEL */
+
+.carrossel{
+    display: flex;
+    position: relative;
+}
+.carrossel img{
+    width: 100%;
+    height: auto;
+}
+.carrossel button{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    border: none;
+    background-color: rgba(0,0,0,0);  
+}
+
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;  
+}
+.prev:hover{
+    left: 0;
+    background:-webkit-linear-gradient(left, rgba(109, 15, 197, 0.5), rgba(0,0,0,0)) ;
+}
+.next:hover{
+    right: 0;
+    background:-webkit-linear-gradient(left, rgba(0,0,0,0), rgba(109, 15, 197,0.5)) ;
+}
+.carrossel-item {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+.carrossel-item p {
+    display: flex;
+    position: absolute;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 5vw; 
+}
+.carrossel-item p.textLeft {
+    inset: 0 50% 0 0; 
+    margin-left: 20px;
+}
+.carrossel-item p.textRigth {
+    inset: 0 0 0 50%;
+    margin-right: 20px;
+}
+
+/*MENU FLUTUANTE*/
+
+#scrollButton{
+    background-color:orange;
+    color: purple;
+    font-size:xx-large;
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    z-index: 2;
+    position: fixed;
+    margin: 15px;
+    display: none;
+    border: none;
+    border-radius: 25px;
+}
+
+/*CONTAINER INFORMATIVO*/
+
+container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+container img{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    margin: 30px;
+
+}
+container texto{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+container texto p{
+    max-width: 500px;
+    min-width: 300px;
+    text-align: center;
+}
+/*LISTA DOS PETS*/
+.newPetlists{
+ display: flex;
+ flex:1;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin: 20px;
+
+}
+.petBox{
+    background-color: aqua;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.486);
+    border-radius: 23px;
+}
+.petBox img{
+    min-width: 250px;
+    width: 10vw;
+    height: auto;
+    
+}
+
+/* RODAPÉ */
+footer{
+    display: flex;
+    background-color: #665833d0;
+    color: white;
+    flex-wrap: wrap;
+}
+footer info{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    margin: 20px;
+}
+footer info p{
+    
+    max-width: 400px;
+    min-width: 300px;
+    text-align: center;
+}
+footer info img{
+    width: 10vw;
+    height: auto;
+    object-fit: contain;
+}
+footer nav{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+footer nav ul{
+    list-style: none;
+    margin-top: 0;
+}
+footer nav ul a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li{
+    margin-bottom: 15px;
+}
+footer social{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+footer social img{
+    width: 50px;
+    height: 50px;
+}
+footerBar{
+    display: flex;
+    color: white;
+    background-color: #665833;
+    
+}
+footerBar p{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
